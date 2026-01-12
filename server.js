@@ -5,7 +5,15 @@ const connectDB=require("./config/db");
 
 connectDB();
 const app=express();
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://task-manager-backend-tjc0.onrender.com"
+    ],
+    credentials: true,
+  })
+);
 app.use(express.json());
 
 app.use("/api",require("./routes/authRoutes"));
