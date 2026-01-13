@@ -9,7 +9,7 @@ app.use(
   cors({
     origin: [
        "http://localhost:5173",
-     "https://task-manager-frontend-rosy-eight.vercel.app"
+     "https://task-manager-frontend-nine-omega.vercel.app"
     ],
     credentials: true,
   })
